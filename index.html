@@ -43,60 +43,60 @@
       </nav>
       <div class="container my-3">
         <h1 class="text-center">Weather for <span id="cityName"></span></h1>
-        <main>
+        <main class="my-3">
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                   <div class="card-header py-3 border-dark">
-                    <h4 class="my-0 fw-normal">Temperatures</h4>
+                    <h4 class="my-0 fw-normal">Temperatures <b>(<span>&#8451;</span>)</b></h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">Temperature is <span id="temp"></span></h1>
+                    <h1 class="card-title pricing-card-title"><span id="temp"></span></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                      
                       <li>Min Temperature is <span id="min_temp"></span></li>
                       <li>Max Temperature is <span id="max_temp"></span></li>
                      
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                  
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                   <div class="card-header py-3 border-dark">
-                    <h4 class="my-0 fw-normal">Cloud</h4>
+                    <h4 class="my-0 fw-normal">Wind Speed <b>(Km/Hr)</b></h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">cloud_pct : <span id="cloud_pct"></span> </h1>
+                    <h1 class="card-title pricing-card-title"><span id="wind_speed"></span> </h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         
-                        <li>Wind speed   is <span id="wind_speed"></span></li>
+                       
                         <li>Wind Degree  is <span id="wind_degrees"></span></li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                 
                   </div>
                 </div>
               </div>
               <div class="col">
                 <div class="card mb-4 rounded-3 ">
                   <div class="card-header py-3 border-dark">
-                    <h4 class="my-0 fw-normal">Humid</h4>
+                    <h4 class="my-0 fw-normal">humidity <b>(%)</b></h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">Humidity is <span id="humidity"></span></h1>
+                    <h1 class="card-title pricing-card-title"><span id="humidity"></span></h1>
                     <ul class="list-unstyled mt-3 mb-4">
                         
                         <li>Feels Like <span id="feels_like"></span></li>
                         
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    
                   </div>
                 </div>
               </div>
             </div>
         
-            <h2 class="display-6 text-center mb-4">Popular Cities</h2>
+            <h2 class="display-6 text-center mb-4"><b>Popular Cities</b> </h2>
         
             <div class="table-responsive">
               <table class="table text-center">
@@ -112,9 +112,9 @@
                   <tr>
                     <th scope="row" class="text-start">Shanghai</th>
                   
-                    <td>2</td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td><span id="max_temp2"></span></td>
+                    <td><span id="min_temp2"></span></td>
+                    <td><span id="humidity2"></span></td>
                      
                   </tr>
                   <tr>
