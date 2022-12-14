@@ -38,13 +38,89 @@ fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Shanghai', o
        
             
             
-            humidity2.innerHTML=response.humidity2
-            min_temp2.innerHTML=response.min_temp2
-            max_temp2.innerHTML=response.max_temp2
+            humidity2.innerHTML=response.humidity
+            min_temp2.innerHTML=response.min_temp
+            max_temp2.innerHTML=response.max_temp
             
            
           
     })
 	.catch(err => console.error(err)); 
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Boston', options)
+	.then(response => response.json())
+	.then(response =>{ 
+        console.log(response)
+       
+            
+            
+            humidity3.innerHTML=response.humidity
+            min_temp3.innerHTML=response.min_temp
+            max_temp3.innerHTML=response.max_temp
+            
+           
+          
+    })
+	.catch(err => console.error(err)); 
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Washington', options)
+	.then(response => response.json())
+	.then(response =>{ 
+        console.log(response)
+       
+            
+            
+            humidity4.innerHTML=response.humidity
+            min_temp4.innerHTML=response.min_temp
+            max_temp4.innerHTML=response.max_temp
+            
+           
+          
+    })
+	.catch(err => console.error(err)); 
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Paris', options)
+	.then(response => response.json())
+	.then(response =>{ 
+        console.log(response)
+       
+            
+            
+            humidity5.innerHTML=response.humidity
+            min_temp5.innerHTML=response.min_temp
+            max_temp5.innerHTML=response.max_temp
+            
+           
+          
+    })
+	.catch(err => console.error(err)); 
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Moscow', options)
+	.then(response => response.json())
+	.then(response =>{ 
+        console.log(response)
+       
+            
+            
+            humidity6.innerHTML=response.humidity
+            min_temp6.innerHTML=response.min_temp
+            max_temp6.innerHTML=response.max_temp
+            
+           
+          
+    })
+	.catch(err => console.error(err)); 
+    fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Tokyo', options)
+	.then(response => response.json())
+	.then(response =>{ 
+        console.log(response)
+       
+            
+            
+            humidity7.innerHTML=response.humidity
+            min_temp7.innerHTML=response.min_temp
+            max_temp7.innerHTML=response.max_temp
+            
+           
+          
+    })
+	.catch(err => console.error(err)); 
+    
 
 
